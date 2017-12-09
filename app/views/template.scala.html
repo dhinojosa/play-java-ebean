@@ -1,0 +1,15 @@
+@(title: String)(content: Html)
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@title</title>
+        <link rel='stylesheet' href='@routes.Assets.versioned("lib/bootstrap/css/bootstrap.css")'>
+        <script type='text/javascript' src='@routes.Assets.versioned("lib/jquery/jquery.js")'></script>
+        <script type='text/javascript' src='@routes.Assets.versioned("lib/bootstrap/js/bootstrap.min.js")'></script>
+    </head>
+    <body>
+        <img src="@routes.Assets.versioned("images/borg.jpg")"/>
+        <h1>Welcome to Borg Fitness</h1>
+        <div>@content</div>
+    </body>
+</html>
